@@ -215,7 +215,7 @@ public class RegistrationGui extends JFrame  implements ActionListener {
             isValid = false;
         }
 
-        if (roles.getSelectedItem().equals("Driver") && (truckNumber.getText().isEmpty() || truckCapacity.getText().isEmpty())) {
+        if (roles.getSelectedItem().equals("driver") && (truckNumber.getText().isEmpty() || truckCapacity.getText().isEmpty())) {
             errorMessage.append("You need to fill in the truck number and capacity\n");
             isValid = false;
         }
@@ -233,17 +233,8 @@ public class RegistrationGui extends JFrame  implements ActionListener {
 
 
 
-    // Helper method to scale an Image
-//    private static Image getScaledImage(Image srcImg, int width, int height) {
-//        BufferedImage resizedImg = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
-//        Graphics2D g2d = resizedImg.createGraphics();
-//
-//        g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
-//        g2d.drawImage(srcImg, 0, 0, width, height, null);
-//        g2d.dispose();
-//
-//        return resizedImg;
-//    }
+
+
 
 
 
